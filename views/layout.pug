@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+
+
+    title= "Levy's Clothing Store"
+  body
+    header 
+      block homeLink
+        if trusted
+          a(href='/users/'+trusted.name) My Page
+
+    h1 The Activity Express Web Server
+  
+
+    block content
+
+  block footer
+   
+      a(href='/') Home
+      |
+      |
+      a(href='/mens') Men's
+      |
+      |
+      a(href='/womens') Women's
+       
