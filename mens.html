@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #6bf321;
-  padding: 0px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 15px;
-  text-align: center;
-}
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #6bf321;
+            padding: 0px;
+        }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-.topnav a.active {
-  background-color: #6bf321;
-  color: white;
-}
-</style>
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #6bf321;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-<<<<<<< HEAD
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav main-nav">
             <ul>
-                <li><a href="groupproject.html">HOMEPAGE</a></li>
+                <li><a href=" groupproject.html">HOMEPAGE</a></li>
                 <li><a href="store.html">SHOP ALL</a></li>
                 <li><a href="mens.html">SHOP MENS</a> </li>
                 <li><a href="womens.html">SHOP WOMENS</a> </li>
@@ -60,7 +63,7 @@ body {
             </ul>
         </nav>
         <hr>
-        <h1>Levy's Clothing Store</h1>
+        <h1 class="store-name store-name-large">Levy's Clothing Store</h1>
     </header>
     <section>
         <h2>MENS SHIRTS</h2>
@@ -109,89 +112,109 @@ body {
                             </div>
                         </div>
     </section>
-=======
->>>>>>> ed18667f48083b8d2aeccd4db2ad7f9a9d5d3e63
+    =======
+    >>>>>>> ed18667f48083b8d2aeccd4db2ad7f9a9d5d3e63
 
     <div class="topnav">
-      <a href= "store.html">SHOP ALL</a>
-      <a class="active" href="mens_test.html">SHOP Mens</a> 
-      <a href="womens_test.html">SHOP WOMENS</a> 
+        <a href="store.html">SHOP ALL</a>
+        <a class="active" href="mens_test.html">SHOP Mens</a>
+        <a href="womens_test.html">SHOP WOMENS</a>
     </div>
-    
-    
-    </body>
+
+
+</body>
+
 <body>
 
 
-<div class="grid-container">
-  <div class="grid-item"> 
-      <img src="Images/mensTshirt1.png" width="200" height= 200""><div>
-        <span>$19.99</span>
-        <button role="button">ADD TO CART</button>
-    </div></div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Images/mensTshirt1.png" width="200" height=200"">
+            <div>
+                <span>$19.99</span>
+                <button role="button">ADD TO CART</button>
+            </div>
+        </div>
 
-  <div class="grid-item">
-      <img src="Images/mensTshirt2.png" width="200" height= 200">
-    <div>
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div></div></div>
+        <div class="grid-item">
+            <img src="Images/mensTshirt2.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$19.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="grid-item"><img src="Images/mensTshirt3.png" width="200" height= 200">
-    <div>
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div></div></div>
+        <div class="grid-item"><img src="Images/mensTshirt3.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$19.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="grid-item"><img src="Images/mensTshirt4.png" width="200" height= 200">
-    <div>
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div></div></div>
+        <div class="grid-item"><img src="Images/mensTshirt4.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$19.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
 
-  <div class="grid-item">
-    <img src="Images/mensShorts1.png" width="200" height= 200">
-    <div>
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div></div></div>
-  
-  <div class="grid-item">
-    <img src="Images/mensShorts2.png" width="200" height= 200">
-    <div>
-      <div>
-          <span>$19.99</span>
-          <button role="button">ADD TO CART</button>
-      </div></div></div>
+        <div class="grid-item">
+            <img src="Images/mensShorts1.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$19.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="grid-item">
-    <img src="Images/mensShorts3.png" width="200" height= 200">
-    <div>
-      <div>
-          <span>$39.99</span>
-          <button role="button">ADD TO CART</button>
-      </div></div></div>
+        <div class="grid-item">
+            <img src="Images/mensShorts2.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$19.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="grid-item"><img src="Images/mensShorts4.png" width="200" height= 200">
-    <div>
-        <div>
-            <span>$39.99</span>
-            <button role="button">ADD TO CART</button>
-        </div></div></div>
+        <div class="grid-item">
+            <img src="Images/mensShorts3.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$39.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="grid-item"><img src="Images/mensJacket1.jpg" width="200" height= 200">
-    <div>
-        <div>
-            <span>$39.99</span>
-            <button role="button">ADD TO CART</button>
-        </div></div></div>
+        <div class="grid-item"><img src="Images/mensShorts4.png" width="200" height=200">
+            <div>
+                <div>
+                    <span>$39.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
 
-</div>
+        <div class="grid-item"><img src="Images/mensJacket1.jpg" width="200" height=200">
+            <div>
+                <div>
+                    <span>$39.99</span>
+                    <button role="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
+
 </html>

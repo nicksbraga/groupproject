@@ -67,3 +67,40 @@ body {
     margin: 0 auto;
     padding: 0 1.5em;
 }
+
+.section-header {
+    text-align: center;
+}
+
+.about-band-image {
+    float: left;
+}
+
+.main-footer {
+    background-image: url("images/headerBackground4.jpg");
+    background-size: cover;
+    padding: .25em 0;
+
+
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .25em;
+    cursor: pointer;
+}
