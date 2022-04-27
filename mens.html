@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Mens Clothing</title>
-    <meta name="description" content="This is the description">
-</head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #6bf321;
+  padding: 0px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #6bf321;
+  color: white;
+}
+</style>
+</head>
 <body>
+<<<<<<< HEAD
     <header>
         <nav>
             <ul>
@@ -68,188 +109,89 @@
                             </div>
                         </div>
     </section>
+=======
+>>>>>>> ed18667f48083b8d2aeccd4db2ad7f9a9d5d3e63
 
-    </section>
+    <div class="topnav">
+      <a href= "store.html">SHOP ALL</a>
+      <a class="active" href="mens_test.html">SHOP Mens</a> 
+      <a href="womens_test.html">SHOP WOMENS</a> 
+    </div>
+    
+    
+    </body>
+<body>
 
-    <section>
-        <h2>MENS SHORTS</h2>
+
+<div class="grid-container">
+  <div class="grid-item"> 
+      <img src="Images/mensTshirt1.png" width="200" height= 200""><div>
+        <span>$19.99</span>
+        <button role="button">ADD TO CART</button>
+    </div></div>
+
+  <div class="grid-item">
+      <img src="Images/mensTshirt2.png" width="200" height= 200">
+    <div>
         <div>
-            <div>
-                <strong>Army Green</strong>
-            </div>
-            <img src="Images/mensShorts1.png">
-            <div>
-                <div>
-                    <span>$19.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>Navy Blue</strong>
-                </div>
-                <img src="Images/mensShorts2.png">
-                <div>
-                    <div>
-                        <span>$19.99</span>
-                        <button role="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <strong>Running Shorts</strong>
-                    </div>
-                    <img src="Images/mensShorts3.png">
-                    <div>
-                        <div>
-                            <span>$19.99</span>
-                            <button role="button">ADD TO CART</button>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <strong>Blue Camo</strong>
-                        </div>
-                        <img src="Images/mensShorts4.png">
-                        <div>
-                            <div>
-                                <span>$19.99</span>
-                                <button role="button">ADD TO CART</button>
-                            </div>
-                        </div>
-
-    </section>
-
-    <section>
-        <h2>MENS JACKETS</h2>
-        <div>
-            <div>
-                <strong>Tan Buttoned</strong>
-            </div>
-            <img src="Images/mensJacket1.jpg">
-            <div>
-                <div>
-                    <span>$39.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>Army Green</strong>
-                </div>
-                <img src="Images/mensJacket2.png">
-                <div>
-                    <div>
-                        <span>$39.99</span>
-                        <button role="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <strong>Black Zipper</strong>
-                    </div>
-                    <img src="Images/mensJacket3.png">
-                    <div>
-                        <div>
-                            <span>$39.99</span>
-                            <button role="button">ADD TO CART</button>
-                        </div>
-                    </div>
-    </section>
-
-    <section>
-        <h2>MENS JEANS</h2>
-        <div>
-            <div>
-                <strong>Ripped Denim</strong>
-            </div>
-            <img src="Images/mensJeans1.png">
-            <div>
-                <div>
-                    <span>$29.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>Ripped Knee Black</strong>
-                </div>
-                <img src="Images/mensJeans2.png">
-                <div>
-                    <div>
-                        <span>$29.99</span>
-                        <button role="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <strong>Stretchy Blue</strong>
-                    </div>
-                    <img src="Images/mensJeans3.png">
-                    <div>
-                        <div>
-                            <span>$29.99</span>
-                            <button role="button">ADD TO CART</button>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <strong>Stretchy Dark Gray</strong>
-                        </div>
-                        <img src="Images/mensJeans4.png">
-                        <div>
-                            <div>
-                                <span>$29.99</span>
-                                <button role="button">ADD TO CART</button>
-                            </div>
-                        </div>
-    </section>
-
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PRICE</strong>
-            &lt;&gt;
-            <strong>QUANTITY</strong>
-        </div>
-        <div>
-            <img src="images/mensTshirt1.png" width="100" height="100">
-            <span>Plain Tan</span>
-            &lt;&gt;
             <span>$19.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button role="button">REMOVE</button>
-        </div>
-        <div>
-            <img src="images/mensJeans1.png" width="100" height="100">
-            <span>Ripped Denim</span>
-            &lt;&gt;
-            <span>$29.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button role="button">REMOVE</button>
-        </div>
-        <hr>
-        <div>
-            <strong>Total</strong>
-            <span>$49.98</span>
+            <button role="button">ADD TO CART</button>
+        </div></div></div>
 
-        </div>
+  <div class="grid-item"><img src="Images/mensTshirt3.png" width="200" height= 200">
+    <div>
         <div>
-            <button role="button">PURCHASE</button>
-        </div>
+            <span>$19.99</span>
+            <button role="button">ADD TO CART</button>
+        </div></div></div>
 
-    </section>
+  <div class="grid-item"><img src="Images/mensTshirt4.png" width="200" height= 200">
+    <div>
+        <div>
+            <span>$19.99</span>
+            <button role="button">ADD TO CART</button>
+        </div></div></div>
 
-    <footer>
-        <h3>Levy's Clothing Store</h3>
-        <ul>
-            <li><img src=" images/Levys.png"></li>
-        </ul>
-    </footer>
+
+  <div class="grid-item">
+    <img src="Images/mensShorts1.png" width="200" height= 200">
+    <div>
+        <div>
+            <span>$19.99</span>
+            <button role="button">ADD TO CART</button>
+        </div></div></div>
+  
+  <div class="grid-item">
+    <img src="Images/mensShorts2.png" width="200" height= 200">
+    <div>
+      <div>
+          <span>$19.99</span>
+          <button role="button">ADD TO CART</button>
+      </div></div></div>
+
+  <div class="grid-item">
+    <img src="Images/mensShorts3.png" width="200" height= 200">
+    <div>
+      <div>
+          <span>$39.99</span>
+          <button role="button">ADD TO CART</button>
+      </div></div></div>
+
+  <div class="grid-item"><img src="Images/mensShorts4.png" width="200" height= 200">
+    <div>
+        <div>
+            <span>$39.99</span>
+            <button role="button">ADD TO CART</button>
+        </div></div></div>
+
+  <div class="grid-item"><img src="Images/mensJacket1.jpg" width="200" height= 200">
+    <div>
+        <div>
+            <span>$39.99</span>
+            <button role="button">ADD TO CART</button>
+        </div></div></div>
+
+</div>
+
 </body>
-
 </html>
