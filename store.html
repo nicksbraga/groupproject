@@ -300,43 +300,43 @@
 
     <section class="content-section container">
         <h2 class="section-header">CART</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PRICE</strong>
-            &lt;&gt;
-            <strong>QUANTITY</strong>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div>
-            <img src="images/mensTshirt1.png" width="100" height="100">
-            <span>Plain Tan</span>
-            &lt;&gt;
-            <span>$19.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button class="btn" role="button">REMOVE</button>
-        </div>
-        <br>
-        <div>
-            <img src="images/mensJeans1.png" width="100" height="100">
-            <span>Ripped Denim</span>
-            &lt;&gt;
-            <span>$29.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button class="btn" role="button">REMOVE</button>
-        </div>
-        <br>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/mensTshirt1.png" width="100" height="100">
+                    <span class="cart-item-title">Plain Tan</span>
+                </div>
+                <span class="cart-price cart-column">$19.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
 
-        <div>
-            <strong>Total</strong>
-            <span>$49.98</span>
-            <button class="btn" role="button">PURCHASE</button>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img src="images/mensJeans1.png" width="100" height="100">
+                    <span class="cart-item-title">Ripped Denim</span>
+                </div>
+                <span class="cart-price cart-column">$29.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
 
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$49.98</span>
         </div>
-        <div>
-            <br>
-        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
 
 
     </section>
