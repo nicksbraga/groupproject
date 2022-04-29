@@ -22,25 +22,18 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
-function purchaseClicked() {
-    alert('Thank you for shopping at Levys!')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal()
-}
-
+//This is a function that removes the article of clothing from the cart 
+//completely. It updates the cart total accordingly.
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
 
+//This is a function that makes sure the quantity of an article of clothing
+//is always at 1. It does not allow the user to input 0 or a negative amount.
 function quantityChanged(event) {
     var input = event.target
     if (isNaN(input.value) || input.value <= 0) {
@@ -49,6 +42,9 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
+//This function adds the variables of the item's name, the item's price, and
+//the item's image to the cart in the event of you pressing the "add to cart" button.
+//It then updates the cart's total.
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
@@ -59,6 +55,9 @@ function addToCartClicked(event) {
     updateCartTotal()
 }
 
+//This is a function that adds the name of the clothing item, the price, and the image of it
+//to the cart. It alert's the user that the item they are trying to add to the cart has 
+//already been added to the cart. It will not let the user add the item to the cart again.
 function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
@@ -86,6 +85,9 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
+//This is a function that updates the cart's total when you change the quantiy of the item 
+//you have in the cart. It rounds the decimal points in the total price to two decimal points.
+//It replaces the $ with '', and then add's the $ back in the cart when calculating the total price.
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
