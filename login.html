@@ -11,20 +11,24 @@
     <div class="login-page">
     <div class="form">
         <form class="register-form">
-        <input type ="text" placeholder="user name"/>
-        <input type ="text" placeholder="password"/>
-        <input type ="text" placeholder="email"/>
-        <button>Create Account</button>
+        <input type ="text" id="username" placeholder="user name"/>
+        <input type ="text" id="password" placeholder="password"/>
+        <button id ="btn">Create Account</button>
         <p class="message">Already Signed Up ? <a href="#">Login</a></p>
+        <div id="msg">
+            <pre></pre>
+        </div>
         </form>
 
 
 
         <form class ="login-form">
-        <input type="text" placeholder="user name"/>
-        <input type="password" placeholder="password"/>
-        <button>Login</button>
+        <input type="text" id="username" placeholder="user name"/>
+        <input type="password" id="password" placeholder="password"/>
+       <a href="groupproject.html"><button>Login</button></a>
+        <!--<button onclick="groupproject.html">Login</button>-->
         <p class="message">Didnt Sign Up ? <a href="#">Sign Up</a></p>
+        <p class="message"><a href="groupproject.html">Back to Homepage</a></p>
     </form>
         </div>
         </div>
@@ -38,12 +42,7 @@
         });
         </script>
 
-
-
-
-
-
-
+        <script src ="authent.js"></script>
 
     
 </body>
