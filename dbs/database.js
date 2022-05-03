@@ -7,7 +7,7 @@ up before you run this code.  You also need a copy of the practiceDB.
 
 This could be easily connected to any local db by changing the desired name.*/
 var mongoClient = require("mongodb").MongoClient;
-var tracker = require("tracker");
+var authent = require("authent");
 
 var url = "mongodb://127.0.0.1:27017/"
 
@@ -20,16 +20,16 @@ async function run(){
 	await client.connect();
 	//if we use await we don't have to pass a callback into connect
 	//Everything after this line will run on the fulfilled promise value
-       const actDB = client.db("practiceDB");
-       const activities = actDB.collection("activities");
+       const projectDB = client.db("projectDB");
+       const login = projectDB.collection("login");
   //notice how the query is exactly the same as if it were in the Mongoshell
 	const query = { user: { $exists: true }} //, distance: {$gte: 4} };
 
 
 	//Here we use a projection to turn off the object ID in the returned
 	//document
-       const cursor = activities.find(query, {
-	       projection: {type: 1, brand: 1, size: 1, mf: 1, sku: 1}});
+       const cursor = login.find(query, {
+	       projection: {username: 1, email: 1, password: 1}});
 	//the projection determines what properities exist in each object 
 
 	
@@ -40,8 +40,8 @@ async function run(){
        
        //cursors contain all of the results, and can be iterated over
        await cursor.forEach(item =>{ 
-	       let current = new tracker(item.activity.type, item.weight, item.distance, item.time);       
-	       console.log(`${item.user} burned ${current.calculate()} calories by ${item.activity.type}! `);
+	       let current = new authent(item.username, item.email, item.password);       
+	       console.log(`${item.user} burned calories by! `);
 	   });
     } finally{
 	//no matter what we want to close the connection when finished
