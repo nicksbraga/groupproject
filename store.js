@@ -1,3 +1,5 @@
+//source https://www.youtube.com/watch?v=YeFzkC2awTM&t=220s
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
